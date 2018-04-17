@@ -8,28 +8,412 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <title>EqualAIs</title>
 
-    <link href="css/under_construction.css" rel="stylesheet">
-    <link href="js/under_construction.js" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/equalais.css" rel="stylesheet">
 
   </head>
 
-    <body>
-        
-<div class="bgimg">
-<!--   <div class="topleft">
-    <p>Logo</p>
-  </div> -->
-  <div class="middle">
-    <h1>UNDER CONSTRUCTION</h1>
-    <h2>COMING SOON</h2>
-    <hr>
-    <p>April 12th 2018</p>
-  </div>
-<!--   <div class="bottomleft">
-    <p>Some text</p>
-  </div> -->
-</div>
+  <body id="page-top">
 
-    </body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <img src="img/Logos/MiniLogo.png"  class="img-fluid mr-2" alt="EqualAIs Logo">
+        <a class="navbar-brand js-scroll-trigger" href="index.html#tool">REMOVE THE BOX</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <p><img src="img/Logos/Logo.png" width="25%"class="img-fluid" alt="EqualAIs Logo"></p>
+              <h1 class="brand-heading">EqualAIs</h1>
+              <h3><p class="intro-text">Empowering humans by subverting machines</p></h3>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section-eqlesspadding text-center">
+      <div class="container text-justify">
+            <h2 class="text-center">About</h2>
+            <h3 class="text-center"> The Problem</h3>
+            <p>What are the policy and societal implications of the unprecedented capability for automated, real time identification and tracking of individuals?</p>
+
+            <p>Private and public surveillance cameras combined with cheap, pervasive, automated facial recognition and classification technology have made it possible to know, in an automated and scalable way, who a person associates with, where they go and when, what their habits and likes and dislikes are and what their mood and health status is. For the first time in the U.S., the government is compiling a national biometric database far beyond known or even suspected criminals. 80% of the facial database entries are unrelated to arrests, from sources including driver’s licenses and passports. The largest private international tech companies have even bigger facial databases and more advanced facial identification algorithms.</p>
+
+            <p>Ubiquitous automated surveillance by the government is likely to have a chilling effect on protected free speech, association and religious activities and weaken the constitutional protections for citizens accused of crimes.</p>
+
+            <p>Access to the same data by private actors leads to a host of privacy and policy questions. Foreseeable bad outcomes for individuals include identity theft, stalking, psychological manipulation and reputational and economic damage.</p>
+            <p class="text-left"><a href="https://www.priv.gc.ca/en/opc-actions-and-decisions/research/explore-privacy-research/2013/fr_201303/">Automated Facial Recognition in the Public and Private Sectors</a></p>
+            <p class="text-left"><a href="https://www.ftc.gov/system/files/documents/public_events/1223263/privacycon_worldofcameras_das2_0.pdf">Assisting Users in a World Full of Cameras: A Privacy-aware Infrastructure for Computer Vision Applications</a></p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="project" class="content-section-lesspadding text-center">
+      <div class="container text-justify">
+            <h3 class="text-center">What we’re doing</h3>
+            <p>We believe there should be more public discourse around what
+              choices we want to make as individuals and as a society regarding how our data and
+              images and facial recognition will be used and more tools to make those choices and
+              to express or enforce them. To that end, our work has multiple components, from a
+              FOIA request for information about the federal government’s use of facial recognition
+              to an open sourced technical prototype for changing photographs so that facial
+              recognition systems can’t see faces in them.</p>
+
+              <p>1. Policy Investigation
+              Examine the policy and societal implications of the unprecedented capability for automated,
+              real time identification and tracking of individuals resulting from the increasing ubiquity of
+              private and public surveillance cameras combined with cheap, pervasive, automated facial
+              recognition and classification technology.</br>
+              ● FOIA request</p>
+
+              <p>2. Technical Adversarial Attack Prototype
+              Show technical feasibility of facial recognition adversarial attacks through creation and
+              improvement of a technical prototype.</br>
+              ● Prototype based on Cleverhans and Goodfellow, et. al.</p>
+
+              <p>3. Communication and Raising Awareness
+              Stimulate public awareness and discourse about those policy implications. Presentations at:</br>
+              ● AMLC TomTomFest</br>
+              ● The American Academy of Arts and Science</br>
+              ● Harvard Berkman Klein Center</p>
+
+              <p>4. Build Open-Source Community
+              Create an open source repository of code, papers and other resources to facilitate further
+              discussion, research and experimentation on facial recognition, facial recognition adversarial
+              attacks and related policy questions by a broad set of stakeholders (e.g. production engineers
+              as well as academics.)</br>
+              ● <a href="https://github.com/equalais/equalais.github.io">Code and resources</a> </p>
+
+              <p>5. Industry Partnerships, Enforcement & Regulation Investigate possible policy alternatives to the status quo, such as an opt in or an opt out system to
+              avoid face tagging on media platforms. Consider industry partnerships and voluntary standards or regulatory or other enforcement mechanisms.</br>
+              ● Multi layered filter: steganographic embedding, human and machine readable “do not read” overlay and adversarial perturbation</p>
+
+              <h3 class="text-left"><small>EqualAIs System Diagram</small></h3>
+              <p><img src="img/DiagramRounded.png" class="img-fluid" alt="EqualAIs System Diagram"></p>
+      </div>
+    </section>
+
+    <!-- Tool Section -->
+    <section id="tool" class="tool-section content-section-eqlesspadding text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>THE TOOL</h2>
+            <p>1. Browse for a picture you would like to EqualAIs (prevent face detection)</br>
+              <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">BROWSE</a>
+            </p>
+
+            <p>2. You will either get a link to download the new result
+              picture or it will automatically donwload
+            </p>
+            <p>3. Use it on your social media and spread the word</p>
+
+            <p>You can find a link to our repository here</p>
+            <ul class="list-inline banner-social-buttons">
+
+              <li class="list-inline-item">
+                <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="content-section-lesspadding text-center" id="faq">
+      <div class="container">
+        <h2>FAQ</h2>
+        <h3 class="text-left"><small>Q. Why an adversarial attack?</small></h3>
+        <p class="text-left text-justify">A. Adversarial attacks work against the most common kinds of image classifiers.</br>
+        An adversarial attack, without deliberate remedial action by the owner of the classifier, makes facial identification and recognition technically impossible, so it has the advantage of not relying on active cooperation by any other parties.</br>
+        Even if it works only partially or briefly, its existence supports a conversation about whether we want to and should be able to have choices about how our society is using biometric data, facial recognition and surveillance.
+        </p>
+        <h3 class="text-left"><small>Q. What do you mean by adversarial attack?</small></h3>
+        <p class="text-left text-justify">A. An adversarial attack is a perturbation deliberately applied to inputs in order to change classifier predictions while leaving the content easily recognizable to humans. Deep learning classifiers are known to be susceptible to adversarial attacks, with examples in previous work including fooling models into saying a stop sign isn’t there, a cat is guacamole or a toy turtle is a rifle. (link to papers?) In our case, the classifiers are neural network models that have been trained to find faces in images. The adversarial attack is a perturbation of the images such that the faces in the perturbed images are still easily recognizable to humans but the model can no longer see them and reports with high confidence (does our model report confidence level or just face/no face?) that the perturbed images contain no faces.</br>
+          <a href="https://arxiv.org/abs/1312.6199">Intriguing properties of neural networks</a>
+        </p>
+        <h3 class="text-left"><small>Q. How is an adversarial attack created?</small></h3>
+        <p class="text-left text-justify">A. Most adversarial examples are made using the gradient of the neural network model. At each pixel, the algorithm tests what direction of change in pixel value makes the probability of the class we're trying to avoid, in our case "face", decrease the most (another set of adversarial attack approaches is designed to target a certain class, so in that case the direction chosen is the one that most increases the probability of the target class.) The algorithm then makes a slight change in that direction. Because it’s a high dimensional space and neural networks are designed to act very linear to make them easy to optimize, the many small input changes add up to a large change in the output, reliably creating examples that are misclassified by a wide variety of models.</br>
+        <a href="https://arxiv.org/abs/1412.6572">Explaining and Harnessing Adversarial Examples</a>
+        </p>
+        <h3 class="text-left"><small>Q. Is this a cat and mouse game? Why is it hard to defend (against adversarial examples)?</small></h3>
+        <p class="text-left text-justify">A. Given a particular type of adversarial example, a defender can add examples of that type to their training data and improve their model’s performance, but this adversarial training only improves performance against that particular type of adversarial example. The model will be vulnerable to the next type of adversarial example the attacker comes up with and generally has slightly worse performance than the original model on clean data. No one has designed a strong, general defense algorithm that can resist a wide variety of attacks and no one knows whether it’s theoretically possible, or whether fundamentally the defender or the attacker has the advantage if they both knew their optimal strategies.</br>
+        One reason it’s hard to defend against adversarial examples is that the space of all possible images is enormous and any sample of real data, even the entirety of all photographs ever taken, is an extremely small fraction. There are many, many ways to change a photograph slightly, leaving it easily recognizable to humans, and many of those shift the classifier’s results away from the ground truth label and towards something else. How many, we don’t really know.</br>
+        Adversarial examples are solutions to a complicated optimization problem where we don’t yet have the theoretical tools to describe that problem’s solution space. So while we can generate and defend against known types, in general, we don’t know how many types there are, what properties they have or how to generate or defend against them.</br>
+        <a href="http://www.cleverhans.io/security/privacy/ml/2017/02/15/why-attacking-machine-learning-is-easier-than-defending-it.html">Why attacking machine learning is easier than defending it</a>
+        </p>
+        <h3 class="text-left"><small>Q. What are the limitations of an adversarial attack?</small></h3>
+        <p class="text-left">A. An adversarial attack can provide at best partial protection against all of the uses others might make of an individual’s image. It is limited in which images it will be applied to and how long the attack will be effective. For type of image, it is only applied to images the individual places into a system. It has no effect on images friends, acquaintances, employers, strangers, store owners, property managers, government agencies or anyone else places into the system and photographs of our faces are routinely taken and posted publicly without our knowledge or consent. For length of effectiveness, a specific kind of adversarial attack will only work as long as the owner of the classification model is ignorant of or indifferent to it. If it’s discovered, the model can be retrained to classify that kind of adversarial example correctly. A third limitation is the degradation of the image quality, lowering its utility for the individual who applied the adversarial filter. Some adversarial attacks are so subtle that the change isn’t noticeable to a human observer, but others make very noticeable changes even though the subject is still recognizable.
+        </p>
+        <h3 class="text-left"><small>Q. What are the results of our adversarial attacks?</small></h3>
+        <p><img src="img/AA_Results.png" class="img-fluid" alt="Adversarial Attack Results"></p>
+
+        <h3 class="text-left"><small>For more information see:</small></h3>
+        <p class="text-left"><a href="http://www.cleverhans.io">http://www.cleverhans.io?</a></p>
+
+        <h3 class="text-left"><small>Glossary/References:</small></h3>
+        <p class="text-left"><a href="http://thehill.com/blogs/pundits-blog/technology/341906-opinion-facial-recognition-surveillance-is-here-but-privacy">Opinion: facial recognition surveillance is here but privacy</a></p>
+        <p class="text-left"><a href="http://thehill.com/blogs/pundits-blog/technology/https://www.washingtonpost.com/news/the-switch/wp/2015/06/11/facial-recognition-technology-is-everywhere-it-may-not-be-legal/?noredirect=on&utm_term=.5b180eea3f5b">Facial recognition technology is everywhere it may not be legal</a></p>
+        <p class="text-left"><a href="https://www.aclu.org/issues/privacy-technology/surveillance-technologies/face-recognition-technology">Surveillance technologies. Face recognition technology</a></p>
+        <p class="text-left"><a href="https://www.theguardian.com/technology/2017/mar/27/us-facial-recognition-database-fbi-drivers-licenses-passports">US facial recognition database fbi drivers licenses passports</a></p>
+        <p class="text-left"><a href="https://globalnews.ca/news/3324968/toilet-paper-hoarding-pushes-chinese-park-to-install-dispensers-that-recognize-faces/">Toilet paper hoarding pushes chinese park to install dispensers that recognize faces</a></p>
+
+
+      </div>
+    </section>
+
+
+    <!-- Team Section -->
+    <section id="team" class="content-section-lesspadding text-center">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>THE TEAM</h2>
+          </div>
+        </div>
+
+        <!-- Team Members Row -->
+        <div class="row">
+          <div class="col-md-4 text-center mb-4">
+            <img id="dp" class="rounded-circle img-fluid mx-auto mb-4" src="img/Faces/pedraza_daniel_s_p.png" alt="pedraza_daniel">
+            <h3>Daniel Pedraza</br>
+              <small>Project Manager</small></br>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-linkedin fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-github fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-twitter fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-envelope fa-fw"></i>
+              </a>
+            </h3>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <img id="da" class="rounded-circle img-fluid mx-auto mb-4" src="img/Faces/adjodah_dhaval_s_p.png" alt="adjodah_dhaval">
+            <h3>Dhaval Adjodah</br>
+              <small>Machine Learning Engineer</small></br>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-linkedin fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-github fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-twitter fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-envelope fa-fw"></i>
+              </a>
+            </h3>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <img id="gg" class="rounded-circle img-fluid  mx-auto mb-4" src="img/Faces/greene_gretchen_s_p.png" alt="greene_gretchen">
+            <h3>Gretchen Greene</br>
+              <small>Machine Learning Engineer</small></br>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-linkedin fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-github fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-twitter fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-envelope fa-fw"></i>
+              </a>
+            </h3>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <img id="jj" class="rounded-circle img-fluid mx-auto mb-4" src="img/Faces/joseph_josh_s_p.png" alt="joseph_josh">
+            <h3>Josh Joseph</br>
+              <small>Machine Learning Engineer</small></br>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-linkedin fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-github fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-twitter fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-envelope fa-fw"></i>
+              </a>
+            </h3>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <img id="tm" class="rounded-circle img-fluid  mx-auto mb-4" src="img/Faces/miano_thom_s_p.png" alt="miano_thom">
+            <h3>Thom Miano</br>
+              <small>Machine Learning Engineer</small></br>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-linkedin fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-github fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-twitter fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/SBootstrap" class="btn-lg">
+                <i class="fa fa-envelope fa-fw"></i>
+              </a>
+            </h3>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <img id="f" class="rounded-circle img-fluid  mx-auto mb-4" src="img/Faces/Francisco_s_p.png" alt="Francisco">
+            <h3>Francisco</br>
+              <small>Machine Learning Engineer</small></br>
+            </h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <a href="team.html" class="btn btn-default btn-lg">KNOW MORE</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Contact the EqualAIs team</h2>
+            <p>Feel free to leave us a comment or to give some feedback about this project!</p>
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
+                  <i class="fa fa-twitter fa-fw"></i>
+                  <span class="network-name">Twitter</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg">
+                  <i class="fa fa-envelope fa-fw"></i>
+                  <span class="network-name">EMAIL</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Attributions -->
+    <section class="content-section-fewpadding text-center" id="attributions">
+      <div class="container">
+        <h2>Acknowledgements</h2>
+        <p class="mb-5 text-justify">We are thankful to the Berkman Klein Center and MIT Media Lab for having
+          had the opportunity to develop the EqualAIs project under the 2018 Assembly
+          program. In particular, we are thankful to the Assembly administrators,
+          board of advisors, Harvard Cyber Law Clinic (Kendra Albert), and other
+          Assembly cohort members who have provided invaluable guidance and support
+          along the way. We also appreciate the support and mentorship of Kade Crockford,
+          James Atwood, and Jessy Lin.</p>
+        <div class="row mt-5">
+          <div class="col-md-4 mx-auto mb-5">
+            <a href="https://cyber.harvard.edu/">
+              <img src="img/Logos/BKC.png" class="img-fluid" alt="BKC">
+            </a>
+          </div>
+          <div class="col-md-4 mx-auto mb-5">
+            <a href="https://bkmla.org/">
+              <img src="img/Logos/assemblylogo_white.png" class="img-fluid" alt="Assembly">
+            </a>
+          </div>
+          <div class="col-md-4 mx-auto">
+            <a href="https://www.media.mit.edu/">
+              <img src="img/Logos/Mit_medialab_logo.png" class="img-fluid" alt="Media Lab">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; EqualAIs 2018</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/equalais.js"></script>
+
+  </body>
+
+</html>
