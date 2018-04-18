@@ -12,7 +12,8 @@ html {
   height: 100%;
 }
 
-h1,
+h1{text-transform: normalize;
+}
 h2,
 h3,
 h4,
