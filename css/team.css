@@ -19,7 +19,7 @@ h5,
 h6 {
   font-family: 'Saira Extra Condensed', serif;
   font-weight: 700;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #343a40;
 }
 
@@ -61,7 +61,7 @@ h2 {
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 @media (min-width: 992px) {
