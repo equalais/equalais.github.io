@@ -146,11 +146,16 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>THE TOOL</h2>
-            <p>1. Browse for a picture you would like to equalAIs (prevent face detection).</br>
-              <a href="" class="btn btn-default btn-lg">BROWSE</a>
+            <p>1. Browse for a picture you would like to EqualAIs (prevent face detection)</br>
+              <label class="btn btn-default btn-lg" for="file">BROWSE</label>
+              <image id='loading' src="img/loader.gif" style="display: none;" alt="loader">
             </p>
+            <form id="uploadimage" action="" method="post" enctype="multipart/form-data">
+              <input type="file" name="image" class="btn btn-default btn-lg" style="display: none;" id="file" required />
+              <input type="submit" value="Upload" class="submit" style="display: none;"/>
+            </form>
 
-            <p>2. You will get a link to download the new result
+            <p>2. You will get a pop up asking for confirmation to download the new result
               picture (on some browsers download will commence automatically).
             </p>
             <p>3. Use it on social media and spread the word!</p>
@@ -402,6 +407,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/equalais.js"></script>
+    <script src="js/tool.js"></script>
 
   </body>
 
