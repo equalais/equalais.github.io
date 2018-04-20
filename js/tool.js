@@ -22,7 +22,7 @@ $(document).ready(function (e) {
       {
         $('#loading').hide();
 
-        let a = document.createElement("a");
+        var a = document.createElement("a");
         a.style = "display: none";
         var header = jqXHR.getResponseHeader('content-type');
 
