@@ -6,12 +6,14 @@ $(document).ready(function (e) {
   var filenameNoEx;
   var exten;
 
+  // Default Local docker address: "http://0.0.0.0:8080" 
+
   $("#uploadimage").on('submit',(function(e) {
     e.preventDefault();
     $("#message").empty();
     $('#loading').show();
     $.ajax({
-      url: "https://equal-ais.appspot.com",
+      url: "https://equalais.ue.r.appspot.com",
       type: "POST",
       data: new FormData(this),
       contentType: false,
@@ -24,29 +26,17 @@ $(document).ready(function (e) {
 
         var a = document.createElement("a");
         a.style = "display: none";
-        var header = jqXHR.getResponseHeader('content-type');
-
-        if(header==match2[0])
-        {
-          exten = ".jpeg";
-        }
-        else if (header==match2[1]) {
-          exten = ".png";
-        }
-        else if (header==match2[2]) {
-          exten = ".jpg";
-        }
 
         filenameNoEx = filename.substring(0, filename.lastIndexOf('.'));
 
         a.href = "data:" + imagefile +";base64," + data;
-        a.download = 'equalAIs_' + filenameNoEx + exten;
+        a.download =  filenameNoEx + "_equalAIs_app.png";
         a.innerHTML = 'download';
         a.target = '_blank';
         a.className = "downl";
         document.body.appendChild(a);
 
-        if (window.confirm('Click OK to download your equalAIsed picture'))
+        if (window.confirm('equalAIs has completed running. Click OK to download your image.'))
         {
           $('.downl')[0].click();
         };
@@ -63,7 +53,7 @@ $(document).ready(function (e) {
       var match= ["image/jpeg","image/png","image/jpg"];
       if(!((imagefile==match[0]) || (imagefile==match[1]) || (imagefile==match[2])))
       {
-        alert("Please Select A valid Image File. Only jpeg, jpg and png Images type allowed")
+        alert("Please select a valid image format. Only jpeg, jpg and png image type are allowed.")
         return false;
       }
       else
